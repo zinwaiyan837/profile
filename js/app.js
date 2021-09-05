@@ -25,7 +25,7 @@
     // change button icon
     $(".navbar-toggler").click(function(){
       let result= $(".navbar-collapse").hasClass("show");
-      console.log(result);
+    //console.log(result);
       if(result){
         $(".menu-icon").removeClass("fa-times").addClass("fa-bars");
       }else{
@@ -47,7 +47,7 @@
       currentSection.waypoint(function(direction) {
           if(direction == "down"){
             let currentSectionId = $(this.element).attr("id");
-            console.log(currentSectionId);
+       //  console.log(currentSectionId);
             setActive(currentSectionId);
           }
           
@@ -57,7 +57,7 @@
        currentSection.waypoint(function(direction) {
         if(direction == "up"){
           let currentSectionId = $(this.element).attr("id");
-          console.log(currentSectionId);
+//     console.log(currentSectionId);
           setActive(currentSectionId);
         }
         
